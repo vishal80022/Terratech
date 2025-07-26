@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Urban Oasis - Hydroponic Vegetables</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Link to the login-specific CSS -->
+    <link rel="stylesheet" href="login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+<nav>
+  <div class="container">
+    <div class="logo">
+      <img src="images/logo.png" alt="Urban Oasis Logo" />
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#benefits">Benefits</a></li>
+      <li><a href="#tools">Tools</a></li>
+      <li><a href="#blog">Blogs</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <!-- Add Login and Sign Up Links -->
+      <li><a href="#" id="login-link">Login</a></li>
+      <li><a href="#" id="signup-link">Sign Up</a></li>
+    </ul>
+    <div class="cart">
+      <i class="fas fa-shopping-cart"></i>
+      <span class="cart-count">0</span>
+    </div>
+    <div class="hamburger">
+      <i class="fas fa-bars"></i>
+    </div>
+  </div>
+</nav>
+
+    <!-- Login Modal -->
+<div id="login-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h2>Login</h2>
+    <form id="login-form">
+      <div class="form-group">
+        <input type="email" id="login-email" placeholder="Email" required />
+      </div>
+      <div class="form-group">
+        <input type="password" id="login-password" placeholder="Password" required />
+      </div>
+      <button type="submit" class="btn">Login</button>
+    </form>
+    <p class="signup-link">Don't have an account? <a href="#" id="switch-to-signup">Sign up here</a></p>
+  </div>
+</div>
+
+<!-- Sign Up Modal -->
+<div id="signup-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h2>Sign Up</h2>
+    <form id="signup-form">
+      <div class="form-group">
+        <input type="text" id="signup-name" placeholder="Full Name" required />
+      </div>
+      <div class="form-group">
+        <input type="email" id="signup-email" placeholder="Email" required />
+      </div>
+      <div class="form-group">
+        <input type="password" id="signup-password" placeholder="Password" required />
+      </div>
+      <div class="form-group">
+        <input type="password" id="signup-confirm-password" placeholder="Confirm Password" required />
+      </div>
+      <button type="submit" class="btn">Sign Up</button>
+    </form>
+    <p class="login-link">Already have an account? <a href="#" id="switch-to-login">Login here</a></p>
+  </div>
+</div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Welcome to Urban Oasis</h1>
+          <p>Fresh, Organic, and Hydroponically Grown Vegetables</p>
+          <a href="#products" class="btn">Shop Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+      <div class="container">
+        <h2>How Hydroponic Farming Works</h2>
+        <p>
+          Hydroponics is a soilless farming technique where plants grow in a
+          nutrient-rich water solution. This method ensures optimal growth by
+          directly delivering essential nutrients to the plant roots.
+        </p>
+        <div class="how-grid">
+          <div class="how-card">
+            <i class="fas fa-seedling"></i>
+            <h3>Seed Germination</h3>
+            <p>
+              Seeds are placed in growing mediums like Rockwool or coconut coir
+              to begin the sprouting process.
+            </p>
+          </div>
+          <div class="how-card">
+            <i class="fas fa-water"></i>
+            <h3>Nutrient Solution</h3>
+            <p>
+              Plants are submerged in a water-based solution enriched with
+              essential minerals such as nitrogen, phosphorus, and potassium.
+            </p>
+          </div>
+          <div class="how-card">
+            <i class="fas fa-lightbulb"></i>
+            <h3>Light and Growth</h3>
+            <p>
+              LED grow lights or natural sunlight provide the necessary light
+              spectrum for photosynthesis and plant development.
+            </p>
+          </div>
+          <div class="how-card">
+            <i class="fas fa-leaf"></i>
+            <h3>Harvesting</h3>
+            <p>
+              After a rapid growth cycle, plants are harvested fresh and
+              pesticide-free, ready for consumption.
+            </p>
+          </div>
+        </div>
+        <div class="how-video">
+          <h3>Watch Hydroponics in Action</h3>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/_R3jZ4YGBGA"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+      <div class="container">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+          <div class="product-card">
+            <img src="images/tomato.png" alt="Tomato" />
+            <h3>Tomato</h3>
+            <p>Rs-23/kg</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="images/lettuce.png" alt="Lettuce" />
+            <h3>Lettuce</h3>
+            <p>Rs-55/kg</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="images/cucumber.png" alt="Cucumber" />
+            <h3>Cucumber</h3>
+            <p>Rs-50/kg</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="images/spinach.png" alt="Spinach" />
+            <h3>Spinach</h3>
+            <p>Rs-30/kg</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+        <a href="#all-products" class="btn">See More Products</a>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits">
+      <div class="container">
+        <h2>Benefits of Hydroponic Vegetables</h2>
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <i class="fas fa-leaf"></i>
+            <h3>Pesticide-Free</h3>
+            <p>Grown without harmful chemicals, ensuring healthier produce.</p>
+          </div>
+          <div class="benefit-card">
+            <i class="fas fa-tint"></i>
+            <h3>Water-Efficient</h3>
+            <p>Uses 90% less water compared to traditional farming.</p>
+          </div>
+          <div class="benefit-card">
+            <i class="fas fa-seedling"></i>
+            <h3>Year-Round Growth</h3>
+            <p>Grow vegetables indoors, regardless of the season.</p>
+          </div>
+        </div>
+        <a href="#benefits-more" class="btn">Know More About Benefits</a>
+      </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools" class="tools">
+      <div class="container">
+        <h2>Hydroponic Tools for Sale</h2>
+        <div class="tools-grid">
+          <div class="tool-card">
+            <img src="images/tool1.jpg" height="100" width="100" alt="Tool 1" />
+            <h3>Nutrient Pump</h3>
+            <p>Rs-1200</p>
+            <button class="btn">Add to Cart</button>
+          </div>
+          <div class="tool-card">
+            <img src="images/tool2.jpg " height="100" width="100" alt="Tool 2" />
+            <h3>Grow Tray</h3>
+            <p>Rs-850</p>
+            <button class="btn">Add to Cart</button>
+          </div>
+          <div class="tool-card">
+            <img src="images/tool3.jpg " height="100" width="100" alt="Tool 2" />
+            <h3>HM digital pH-80</h3>
+            <p>Rs-4000</p>
+            <button class="btn">Add to Cart</button>
+          </div>
+          <div class="tool-card">
+            <img src="images/tool4.jpg " height="100" width="100" alt="Tool 2" />
+            <h3>Air Pumps</h3>
+            <p>Rs-449</p>
+            <button class="btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Training Section -->
+    <section id="training" class="training">
+      <div class="container">
+        <h2>Learn Hydroponics with Us</h2>
+        <p>Join our online and offline training sessions to master the art of modern farming.</p>
+        <div class="training-grid">
+          <div class="training-card">
+            <h3>Online Course</h3>
+            <p>Self-paced video lectures and guidance by experts.</p>
+            <button class="btn">Join Now</button>
+          </div>
+          <div class="training-card">
+            <h3>In-Person Workshop</h3>
+            <p>Hands-on learning at our Urban Oasis farm center.</p>
+            <button class="btn">Register</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+      <div class="container">
+        <h2>Latest Tips & Guides</h2>
+        <div class="blog-grid">
+          <div class="blog-post">
+            <h3>5 Benefits of Eating Hydroponic Vegetables</h3>
+            <p>Discover why hydroponics is the healthiest option for your diet...</p>
+            <a href="#">Read More</a>
+          </div>
+          <div class="blog-post">
+            <h3>DIY Hydroponics at Home</h3>
+            <p>Start your own mini hydroponic garden with these easy steps...</p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Subscription Section -->
+    <section id="subscribe" class="subscribe">
+      <div class="container">
+        <h2>Subscribe for Fresh Updates</h2>
+        <form id="subscribe-form">
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Urban Oasis. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    
+    </footer>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
